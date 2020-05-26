@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds">
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>logs/application.log</file>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>logs/${HOSTNAME}_application_%d{yyyy-MM-dd}.%i.gz
+			</fileNamePattern>
+			<!-- each file should be at most 50MB, keep 14 days worth of history, 
+				but at most 10GB -->
+			<maxFileSize>50MB</maxFileSize>
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>10GB</totalSizeCap>
+		</rollingPolicy>
+
+		<encoder>
+			<charset>UTF-8</charset>
+			<pattern>%d %-5level [%thread] [%.8X{Session-Id}] [%.8X{Request-Id}] %-20logger{10}\(%line\) - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.apache.http.impl.client" level="ERROR" />
+	<logger name="org.apache.http.wire" level="ERROR" />
+
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d %-5level [%thread] [%.8X{Session-Id}] [%.8X{Request-Id}] %-20logger{10}\(%line\) - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<root level="TRACE">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>
