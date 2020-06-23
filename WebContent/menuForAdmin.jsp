@@ -12,7 +12,7 @@
 
 
 <head>
-<title>RCPIT, TPO</title>
+<title>Admin</title>
 <!-- meta tags -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +54,7 @@
 	<br>
 	<div class=" w3l-login-form">
 		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Welcome
-			Milkesh Jain Sir</h2>
+			Admin</h2>
 		<form action="addCompany.jsp">
 			<button type="submit"
 				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Add

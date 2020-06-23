@@ -1,44 +1,42 @@
-2020-05-12 14:05:39,873 DEBUG [main] [] [] u.o.l.s.c.SysOutOverSLF4JInitialiser(56) - Your logging framework class ch.qos.logback.classic.Logger should not need access to the standard println methods on the console, so you should not need to register a logging system package.
-2020-05-12 14:05:39,964 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(56) - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
-2020-05-12 14:05:39,999 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(48) - Redirected System.out and System.err to SLF4J for this context
-2020-05-12 14:05:40,000 INFO  [main] [] [] l.Main              (46) - in Main
-2020-05-12 14:05:40,002 INFO  [main] [] [] l.Main              (37) - application resolved root folder: C:\Users\admin\Desktop\rcpit_tpo
-2020-05-12 14:05:41,020 INFO  [main] [] [] l.Main              (37) - application resolved root folder: C:\Users\admin\Desktop\rcpit_tpo
-2020-05-12 14:05:41,131 INFO  [main] [] [] l.Main              (74) - configuring app with basedir: C:\Users\admin\Desktop\rcpit_tpo\WebContent
-2020-05-12 14:05:41,138 INFO  [main] [] [] l.Main              (84) - loading WEB-INF resources from as 'C:\Users\admin\Desktop\rcpit_tpo\target\classes'
-2020-05-12 14:05:42,526 INFO  [main] [] [] l.Main              (92) - WebApp Started on port : 9001
-2020-05-12 15:32:23,093 DEBUG [main] [] [] u.o.l.s.c.SysOutOverSLF4JInitialiser(56) - Your logging framework class ch.qos.logback.classic.Logger should not need access to the standard println methods on the console, so you should not need to register a logging system package.
-2020-05-12 15:32:23,103 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(56) - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
-2020-05-12 15:32:23,119 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(48) - Redirected System.out and System.err to SLF4J for this context
-2020-05-12 15:32:23,120 INFO  [main] [] [] l.Main              (46) - in Main
-2020-05-12 15:32:23,122 INFO  [main] [] [] l.Main              (37) - application resolved root folder: C:\Users\admin\Desktop\rcpit_tpo
-2020-05-12 15:32:23,444 INFO  [main] [] [] l.Main              (37) - application resolved root folder: C:\Users\admin\Desktop\rcpit_tpo
-2020-05-12 15:32:23,506 INFO  [main] [] [] l.Main              (74) - configuring app with basedir: C:\Users\admin\Desktop\rcpit_tpo\WebContent
-2020-05-12 15:32:23,514 INFO  [main] [] [] l.Main              (84) - loading WEB-INF resources from as 'C:\Users\admin\Desktop\rcpit_tpo\target\classes'
-2020-05-12 15:32:25,091 INFO  [main] [] [] l.Main              (92) - WebApp Started on port : 9001
-2020-05-12 16:50:57,475 DEBUG [main] [] [] u.o.l.s.c.SysOutOverSLF4JInitialiser(56) - Your logging framework class ch.qos.logback.classic.Logger should not need access to the standard println methods on the console, so you should not need to register a logging system package.
-2020-05-12 16:50:57,484 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(56) - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
-2020-05-12 16:50:57,491 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(48) - Redirected System.out and System.err to SLF4J for this context
-2020-05-12 16:50:57,491 INFO  [main] [] [] l.Main              (46) - in Main
-2020-05-12 16:50:57,492 INFO  [main] [] [] l.Main              (37) - application resolved root folder: C:\Users\admin\Desktop\rcpit_tpo
-2020-05-12 16:50:57,811 INFO  [main] [] [] l.Main              (37) - application resolved root folder: C:\Users\admin\Desktop\rcpit_tpo
-2020-05-12 16:50:57,863 INFO  [main] [] [] l.Main              (74) - configuring app with basedir: C:\Users\admin\Desktop\rcpit_tpo\WebContent
-2020-05-12 16:50:57,870 INFO  [main] [] [] l.Main              (84) - loading WEB-INF resources from as 'C:\Users\admin\Desktop\rcpit_tpo\target\classes'
-2020-05-12 16:50:59,072 INFO  [main] [] [] l.Main              (92) - WebApp Started on port : 9001
-2020-05-12 16:55:07,526 INFO  [http-nio-9001-exec-5] [] [] s.AdminLogin        (46) - User: null, data:{password=1234, email=admin@gmail.com}
-2020-05-12 16:55:07,533 INFO  [http-nio-9001-exec-5] [] [] l.Main              (37) - application resolved root folder: C:\Users\admin\Desktop\rcpit_tpo
-2020-05-12 16:57:00,188 INFO  [http-nio-9001-exec-8] [] [] s.AdminLogin        (46) - User: null, data:{password=admin, email=admin@gmail.com}
-2020-05-12 16:59:47,902 INFO  [http-nio-9001-exec-4] [] [] s.StudentLogin      (54) - User: null, data:{password=saurabh123, email=saurabhnikum99@gmail.com}
-2020-05-12 16:59:47,908 INFO  [http-nio-9001-exec-4] [] [] l.Main              (37) - application resolved root folder: C:\Users\admin\Desktop\rcpit_tpo
-2020-05-12 16:59:48,605 INFO  [http-nio-9001-exec-4] [] [] c.DBconnect         (32) - Connected
-2020-05-12 17:00:37,360 INFO  [http-nio-9001-exec-4] [] [] s.Download          (72) - User: saurabhnikum99@gmail.com, data:{file=1587275664907-my photo.jpg, type=image/jpeg}
-2020-05-12 17:01:13,076 INFO  [http-nio-9001-exec-8] [] [] s.ViewSelectionProcess(52) - User: saurabhnikum99@gmail.com, data:{cname=Capgemini}
-2020-05-12 17:01:33,237 INFO  [http-nio-9001-exec-3] [] [] s.Download          (72) - User: saurabhnikum99@gmail.com, data:{file=1587275664907-my photo.jpg, type=image/jpeg}
-2020-05-12 17:03:14,839 INFO  [http-nio-9001-exec-6] [] [] s.ChangePassword    (60) - User: saurabhnikum99@gmail.com, data:{currentpassword=saurabh123, newpassword=sau123, confirmpassword=sau123}
-2020-05-12 17:05:04,252 INFO  [http-nio-9001-exec-2] [] [] s.ViewSelectionProcess(52) - User: saurabhnikum99@gmail.com, data:{cname=Capgemini}
-2020-05-12 17:05:13,010 INFO  [http-nio-9001-exec-4] [] [] s.Download          (72) - User: saurabhnikum99@gmail.com, data:{file=1587275664907-my photo.jpg, type=image/jpeg}
-2020-05-12 17:05:53,252 INFO  [http-nio-9001-exec-2] [] [] s.StudentLogin      (54) - User: null, data:{password=sau123, email=saurabhnikum99@gmail.com}
-2020-05-12 17:05:56,130 INFO  [http-nio-9001-exec-5] [] [] s.Download          (72) - User: saurabhnikum99@gmail.com, data:{file=1587275664907-my photo.jpg, type=image/jpeg}
-2020-05-12 17:06:04,716 INFO  [http-nio-9001-exec-8] [] [] s.Download          (72) - User: saurabhnikum99@gmail.com, data:{file=1587275664907-my photo.jpg, type=image/jpeg}
-2020-05-12 17:06:38,292 INFO  [http-nio-9001-exec-3] [] [] s.StudentLogin      (54) - User: null, data:{password=saurabh123, email=saurabhnikum99@gmail.com}
-2020-05-12 17:06:53,092 INFO  [http-nio-9001-exec-4] [] [] s.StudentLogin      (54) - User: null, data:{password=sau123, email=saurabhnikum99@gmail.com}
+2020-06-23 18:23:19,608 DEBUG [main] [] [] u.o.l.s.c.SysOutOverSLF4JInitialiser(56) - Your logging framework class ch.qos.logback.classic.Logger should not need access to the standard println methods on the console, so you should not need to register a logging system package.
+2020-06-23 18:23:19,725 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(56) - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
+2020-06-23 18:23:19,791 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(48) - Redirected System.out and System.err to SLF4J for this context
+2020-06-23 18:23:19,793 INFO  [main] [] [] l.Main              (46) - in Main
+2020-06-23 18:23:19,799 INFO  [main] [] [] l.Main              (37) - application resolved root folder: D:\Final Project\RCPIT-TPO-WEBSITE
+2020-06-23 18:23:21,100 INFO  [main] [] [] l.Main              (37) - application resolved root folder: D:\Final Project\RCPIT-TPO-WEBSITE
+2020-06-23 18:23:21,197 INFO  [main] [] [] l.Main              (74) - configuring app with basedir: D:\Final Project\RCPIT-TPO-WEBSITE\WebContent
+2020-06-23 18:23:21,205 INFO  [main] [] [] l.Main              (84) - loading WEB-INF resources from as 'D:\Final Project\RCPIT-TPO-WEBSITE\target\classes'
+2020-06-23 18:23:22,544 INFO  [main] [] [] l.Main              (92) - WebApp Started on port : 9001
+2020-06-23 18:23:40,738 INFO  [http-nio-9001-exec-5] [] [] s.StudentLogin      (54) - User: null, data:{password=sau123, email=saurabhnikum99@gmail.com}
+2020-06-23 18:23:40,748 INFO  [http-nio-9001-exec-5] [] [] l.Main              (37) - application resolved root folder: D:\Final Project\RCPIT-TPO-WEBSITE
+2020-06-23 18:23:41,074 INFO  [http-nio-9001-exec-5] [] [] c.DBconnect         (32) - Connected
+2020-06-23 18:23:48,105 INFO  [http-nio-9001-exec-8] [] [] s.ForgotPassword    (43) - User: null, data:{email=saurabhnikum99@gmail.com}
+2020-06-23 18:23:48,250 INFO  [http-nio-9001-exec-8] [] [] l.Main              (37) - application resolved root folder: D:\Final Project\RCPIT-TPO-WEBSITE
+2020-06-23 18:23:48,352 INFO  [http-nio-9001-exec-8] [] [] s.ForgotPassword    (116) - sending mail
+2020-06-23 18:23:59,907 INFO  [http-nio-9001-exec-8] [] [] s.ForgotPassword    (119) - Done
+2020-06-23 18:24:12,325 INFO  [http-nio-9001-exec-2] [] [] s.ForgotPassword    (43) - User: null, data:{password=sau123, forgotPasswordAuthTOken=YFMFVjCk0q7wmu7Mw31rvhvLkdoQwZQAOC7mQ0uADrMShQelQcTeK22DFzdi0eGnQh4XSoXGVuHzn4Q6oIR9TLYn8djVqMbJz2cS9LsAoW52KdJ9hUGhax7wO6vsWT0YLF6s3dKWrFWB0xweMeR8ybV0QSdsKMPaL8EdKXgLKmfqz2yXlM93UIuNpQUbnhictsJwgwxR1592916828111}
+2020-06-23 18:24:18,254 INFO  [http-nio-9001-exec-5] [] [] s.StudentLogin      (54) - User: null, data:{password=sau123, email=saurabhnikum99@gmail.com}
+2020-06-23 18:24:56,140 INFO  [http-nio-9001-exec-1] [] [] s.StudentLogin      (54) - User: null, data:{password=sonu123, email=sssonunnn@gmail.com}
+2020-06-23 18:25:05,804 INFO  [http-nio-9001-exec-5] [] [] s.ForgotPassword    (43) - User: null, data:{email=sssonunnn@gmail.com}
+2020-06-23 18:25:05,961 INFO  [http-nio-9001-exec-5] [] [] s.ForgotPassword    (116) - sending mail
+2020-06-23 18:25:15,829 INFO  [http-nio-9001-exec-5] [] [] s.ForgotPassword    (119) - Done
+2020-06-23 18:25:28,144 INFO  [http-nio-9001-exec-9] [] [] s.ForgotPassword    (43) - User: null, data:{password=sonu123, forgotPasswordAuthTOken=bzMYUs9PCmKni6INRAUU6WMkHH6WVBUp6n8efpQwa8meJa2bxHeOqybEti3WtSX45HQCO5JLF1h6ZCGLYS2KJyqi7JdqHVEI1T6eevidxQiWt23q2AE4MPNR5SYHsR3JGk6u8TUqfswAfwBVl6qjHfmDmvQHnvNHtAK81niK9NgP52JPfSTSNUSgSvsvV5RkQ1Id9NGe1592916905809}
+2020-06-23 18:27:12,318 DEBUG [main] [] [] u.o.l.s.c.SysOutOverSLF4JInitialiser(56) - Your logging framework class ch.qos.logback.classic.Logger should not need access to the standard println methods on the console, so you should not need to register a logging system package.
+2020-06-23 18:27:12,331 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(56) - Replaced standard System.out and System.err PrintStreams with SLF4JPrintStreams
+2020-06-23 18:27:12,358 INFO  [main] [] [] u.o.l.s.c.SysOutOverSLF4J(48) - Redirected System.out and System.err to SLF4J for this context
+2020-06-23 18:27:12,362 INFO  [main] [] [] l.Main              (46) - in Main
+2020-06-23 18:27:12,367 INFO  [main] [] [] l.Main              (37) - application resolved root folder: D:\Final Project\RCPIT-TPO-WEBSITE
+2020-06-23 18:27:13,755 INFO  [main] [] [] l.Main              (37) - application resolved root folder: D:\Final Project\RCPIT-TPO-WEBSITE
+2020-06-23 18:27:13,919 INFO  [main] [] [] l.Main              (74) - configuring app with basedir: D:\Final Project\RCPIT-TPO-WEBSITE\WebContent
+2020-06-23 18:27:13,949 INFO  [main] [] [] l.Main              (84) - loading WEB-INF resources from as 'D:\Final Project\RCPIT-TPO-WEBSITE\target\classes'
+2020-06-23 18:27:15,482 INFO  [main] [] [] l.Main              (92) - WebApp Started on port : 9001
+2020-06-23 18:27:26,563 INFO  [http-nio-9001-exec-3] [] [] s.AdminLogin        (46) - User: null, data:{password=admin, email=admin@gmail.com}
+2020-06-23 18:27:26,569 INFO  [http-nio-9001-exec-3] [] [] l.Main              (37) - application resolved root folder: D:\Final Project\RCPIT-TPO-WEBSITE
+2020-06-23 18:27:53,162 INFO  [http-nio-9001-exec-6] [] [] l.Main              (37) - application resolved root folder: D:\Final Project\RCPIT-TPO-WEBSITE
+2020-06-23 18:27:53,358 INFO  [http-nio-9001-exec-6] [] [] c.DBconnect         (32) - Connected
+2020-06-23 18:28:34,640 INFO  [http-nio-9001-exec-5] [] [] s.CompanyLogin      (50) - User: null, data:{password=beltron, email=beltron@gmail.com}
+2020-06-23 18:28:38,587 INFO  [http-nio-9001-exec-7] [] [] viewStudentCompany_JSP(279) - 66
+2020-06-23 18:28:38,588 INFO  [http-nio-9001-exec-7] [] [] viewStudentCompany_JSP(279) - 66
+2020-06-23 18:28:38,590 INFO  [http-nio-9001-exec-7] [] [] viewStudentCompany_JSP(279) - 5.56
+2020-06-23 18:28:38,591 INFO  [http-nio-9001-exec-7] [] [] viewStudentCompany_JSP(279) - 0
+2020-06-23 18:28:38,592 INFO  [http-nio-9001-exec-7] [] [] viewStudentCompany_JSP(279) - 0

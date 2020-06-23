@@ -57,9 +57,9 @@
 		<div style="width: 50%; float: left">
 		<br><br>
 			<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px red;">
-				<b>Project By 2019-20 Batch Students</b><br><b>Branch: Computer Enginering</b><br><br>Shweta Mahajan  (Roll no. 1)<br>Saurabh Nikum  (Roll no. 2)<br>Rohit Narkhede  (Roll no. 25)<br> Kalyani
-				Mahajan  (Roll no. 102)<br>
-				<br><b>Guided By: Prof. Prasad P. Mahale</b>
+				<b>Project By 2019-20 Batch Students</b><br><b>Branch: Computer Enginering</b><br><br>Saurabh Nikum<br>Shweta Mahajan<br>Rohit Narkhede<br> Kalyani
+				Mahajan<br>
+				
 			</h2>
 		</div>
 		<div style="width: 50%; float: right">

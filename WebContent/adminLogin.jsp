@@ -75,7 +75,7 @@ function validateEmail(emailField)
 	<h1 style="color: orange; text-shadow: 0.5px 0.5px 0.5px red;">R.
 		C. Patel Institute of Technology, Shirpur</h1>
 	<div class=" w3l-login-form">
-		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">TPO
+		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Admin
 			Login</h2>
 		<form action="AdminLogin" method="POST">
 			<h3 style="color: pink; text-shadow: 0.5px 0.5px 0.5px black;">Head

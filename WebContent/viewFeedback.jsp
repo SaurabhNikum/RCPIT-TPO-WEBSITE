@@ -44,7 +44,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" style="font-size: 19px" href="#">RCPIT</a>
+				<a class="navbar-brand" style="font-size: 19px" href="#">Guest</a>
 			</div>
 			<div
 				style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
@@ -60,6 +60,8 @@
 						class="user-image img-responsive" style="height: 100px;" /></li>
 					<li><a href="viewPlacementsTillDateStudents.jsp"><i class="fa fa-edit fa-3x"></i>View
 							Placement till date</a></li>
+					<li><a href="viewFeedback.jsp"><i class="fa fa-edit fa-3x"></i>View
+							Feedback of Students</a></li							
 
 				</ul>
 
