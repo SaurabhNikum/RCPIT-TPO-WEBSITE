@@ -11,6 +11,24 @@
 		return;
 	}
 %>
+<%
+	String fileName = "assets/img/find_user.png";
+	try {
+		Statement statement = null;
+		ResultSet rs = null;
+		Connection conn = DBconnect.getConnect();
+		statement = conn.createStatement();
+		String sql = "select image from student where roll_no = '" + session.getAttribute("ROLL_NO") + "'";
+		rs = statement.executeQuery(sql);
+		if (rs.next()) {
+			fileName = rs.getString("IMAGE");
+		}
+	} catch (Exception e) {
+		log.error("Could not load page : {}", e);
+	}
+	if (!fileName.equalsIgnoreCase("assets/img/find_user.png"))
+		fileName = "/Download?file=" + fileName + "&type=image/jpeg";
+%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -51,8 +69,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" style="font-size: 19px" href="#">RCPIT,
-					TPO</a>
+				<a class="navbar-brand" style="font-size: 19px" href="#"><%= session.getAttribute("name") %></a>
 			</div>
 			<div
 				style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
@@ -64,7 +81,7 @@
 		<nav class="navbar-default navbar-side" role="navigation">
 			<div class="sidebar-collapse">
 				<ul class="nav" id="main-menu">
-					<li class="text-center"><img src="assets/img/find_user.png"
+					<li class="text-center"><img src="<%=fileName%>"
 						class="user-image img-responsive" style="height: 100px;" /></li>
 			<li><a href="uploadResume.jsp"><i class="fa fa-edit fa-3x"></i>Upload/Update
 					Resume</a></li>

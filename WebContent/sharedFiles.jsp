@@ -68,6 +68,7 @@
 				<%
 					if(Auth.getRole(session).equals("COMPANY")){
 				%>
+					<h2>&nbsp&nbspAdd Files</h2>				
 					<div class="col-md-12 navbar" >
 
 						<form action="SharedFiles" method="POST" enctype="multipart/form-data">
@@ -85,7 +86,7 @@
 					
 				<% } %>
 					
-					<h2>&nbsp&nbspFiles</h2>
+					<h2>&nbsp&nbspShared Files</h2>
 						<table border="1" id="displaytable" class="table table-bordered"
 							style="">
 							<thead>

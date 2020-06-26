@@ -38,115 +38,113 @@
 <body>
 	<h1 style="color: orange; text-shadow: 0.5px 0.5px 0.5px red;">R.
 		C. Patel Institute of Technology, Shirpur</h1>
+	<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Welcome <%= session.getAttribute("name") %></h2>		
 
 	<br>
 	<br>
-	<div class=" w3l-login-form">
-		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Welcome
-			Students</h2>
-		<form action="uploadResume.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Upload/Update
-				Resume</button>
-		</form>
-		<br>
-		<br>
-		<br>
-
-		<form action="uploadPic.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Upload/Update
-				Passport photo</button>
-		</form>
-		<br>
-		<br>
-		<br>
+<div class="col-md-12">	
+		<div style="width: 50%; float: left">	
+			<div class=" w3l-login-form">
 		
-		<form action="editProfile.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Edit Personal Information</button>
-		</form>
-		<br>
-		<br>
-		<br>		
+				<form action="uploadResume.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Upload/Update
+						Resume</button>
+				</form>
+				<br>
+				<br>
+
 		
-		<form action="viewDrives.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View Upcoming
-				Campus Drives Details</button>
-		</form>
-		<br>
-		<br>
-		<br>
-		<form action="viewSelectionProcess.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View
-				Selection Process Of Company</button>
-		</form>
-		<br>
-		<br>
-		<br>
-		<form action="learnAptituteQuestions.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Learn
-				Aptitute Questions</button>
-		</form>
-		<br>
-		<br>
-		<br>
-		<form action="https://accounts.google.com/">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View
-				Notifications</button>
-		</form>
-		<br>
-		<br>
-		<br>
+				<form action="uploadPic.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Upload/Update
+						Passport photo</button>
+				</form>
+				<br>
+				<br>
 
-		<form action="askQueries.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Ask
-				Queries</button>
-		</form>
-		<br>
-		<br>
-		<br>
-		<form action="addFeedback.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Add
-				Feedback For Students</button>
-		</form>
-		<br>
-		<br>
-		<br>
-		<form action="viewAnsweredQueries.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View
-				Answered Queries By TPO</button>
-		</form>
-		<br>
-		<br>
-		<br>
-		<form action="password.jsp">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Change Password</button>
-		</form>
-		<br>
-		<br>
-		<br>
+				
+				<form action="editProfile.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Edit Personal Information</button>
+				</form>
+				<br>
+				<br>
+		
+				
+				<form action="viewDrives.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View Upcoming
+						Campus Drives Details</button>
+				</form>
+				<br>
+				<br>
 
-		<form action="/Logout">
-			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Logout</button>
-		</form>
-		<br>
-		<br>
-		<br>
+				<form action="viewSelectionProcess.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View
+						Selection Process Of Company</button>
+				</form>
+				<br>
+				<br>
+			
+				<form action="learnAptituteQuestions.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Learn
+						Aptitute Questions</button>
+				</form>
+			</div>
+		</div>
+		<div style="width: 50%; float: left">	
+			<div class=" w3l-login-form">	
+				<form action="https://accounts.google.com/">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View
+						Notifications</button>
+				</form>
+				<br>
+				<br>
 
+		
+				<form action="askQueries.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Ask
+						Queries</button>
+				</form>
+				<br>
+				<br>
 
+				<form action="addFeedback.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Add
+						Feedback For Students</button>
+				</form>
+				<br>
+				<br>
 
+				<form action="viewAnsweredQueries.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View
+						Answered Queries By TPO</button>
+				</form>
+				<br>
+				<br>
 
-	</div>
+				<form action="password.jsp">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Change Password</button>
+				</form>
+				<br>
+				<br>
+		
+				<form action="/Logout">
+					<button type="submit"
+						style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Logout</button>
+				</form>
+			</div>
+		</div>
+
+</div>
 
 
 	<title>RCPIT, TPO</title>

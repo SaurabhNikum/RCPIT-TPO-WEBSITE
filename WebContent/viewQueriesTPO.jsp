@@ -48,7 +48,7 @@
 		<div id="page-wrapper">
 			<div id="page-inner">
 				<div class="row">
-					<h2>&nbsp&nbspQuries of Students</h2>
+					<h2>&nbsp&nbspQueries of Students</h2>
 					<div class="col-md-12">
 
 						<table border="1" id="displaytable" class="table table-bordered"

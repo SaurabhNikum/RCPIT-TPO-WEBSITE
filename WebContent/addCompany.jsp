@@ -146,7 +146,7 @@
  						 
  						 <div class="group">
     						<i class="fas fa-user"></i>
-    						<input type="checkbox" name="eligible" value="Electronics">
+    						<input type="checkbox" name="eligible" value="Electrical">
     						<label >Electrical Engineering</label>   							 				 
  						 </div>
  						 

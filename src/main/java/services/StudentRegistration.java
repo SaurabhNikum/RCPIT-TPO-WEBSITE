@@ -1,8 +1,6 @@
 package services;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -89,15 +87,7 @@ public class StudentRegistration extends HttpServlet {
 					return;
 				}
 			}
-	        MessageDigest digest = MessageDigest.getInstance("SHA-256");
-	        byte[] hash = digest.digest(passwords.getBytes("UTF-8"));
-	        StringBuffer hexString = new StringBuffer();
 
-	        for (int i = 0; i < hash.length; i++) {
-	            String hex = Integer.toHexString(0xff & hash[i]);
-	            if(hex.length() == 1) hexString.append('0');
-	            hexString.append(hex);
-	        }
 			
 			ps = conn.prepareStatement("insert into student values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
@@ -107,7 +97,7 @@ public class StudentRegistration extends HttpServlet {
 			ps.setString(4, branchs);
 			ps.setString(5, divs);
 			ps.setString(6, emails);
-			ps.setString(7, hexString.toString());
+			ps.setString(7, passwords);
 			ps.setString(8, mobnos);
 			ps.setString(9, CGPAs);
 			ps.setString(10, sscs);

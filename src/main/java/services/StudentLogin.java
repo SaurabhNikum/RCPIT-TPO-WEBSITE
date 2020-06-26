@@ -1,7 +1,6 @@
 package services;
 
 import java.io.IOException;
-import java.security.MessageDigest;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -56,21 +55,10 @@ public class StudentLogin extends HttpServlet {
 		String email = request.getParameter("email");
 		String pass = request.getParameter("password");
 		try {
-			
-	        MessageDigest digest = MessageDigest.getInstance("SHA-256");
-	        byte[] hash = digest.digest(pass.getBytes("UTF-8"));
-	        StringBuffer hexString = new StringBuffer();
-
-	        for (int i = 0; i < hash.length; i++) {
-	            String hex = Integer.toHexString(0xff & hash[i]);
-	            if(hex.length() == 1) hexString.append('0');
-	            hexString.append(hex);
-	        }
-	        
 			Connection conn = DBconnect.getConnect();
 			PreparedStatement ps = conn.prepareStatement("select * from Student where EMAIL_ID=? and PASSWORD=?");
 			ps.setString(1, email);
-			ps.setString(2, hexString.toString());
+			ps.setString(2, pass);
 			ResultSet rs = ps.executeQuery();
 			if (rs.next()) {
 				UserInfo.setRollNo(rs.getString("ROLL_NO"));
@@ -82,6 +70,7 @@ public class StudentLogin extends HttpServlet {
 				session.setAttribute("BRANCH", rs.getString("BRANCH"));
 				session.setAttribute("user", rs.getString("EMAIL_ID"));
 				session.setAttribute("role", "STUDENT");
+				session.setAttribute("name", rs.getString("NAME"));				
 				response.sendRedirect("menuForStudent.jsp");
 			} else {
 				request.getSession().setAttribute("msg", "Wrong User Credentials..!!");

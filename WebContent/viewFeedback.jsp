@@ -58,10 +58,11 @@
 				<ul class="nav" id="main-menu">
 					<li class="text-center"><img src="assets/img/find_user.png"
 						class="user-image img-responsive" style="height: 100px;" /></li>
+					<li><a href="viewFeedback.jsp"><i class="fa fa-edit fa-3x"></i>View
+							Feedback of Students</a></li>							
 					<li><a href="viewPlacementsTillDateStudents.jsp"><i class="fa fa-edit fa-3x"></i>View
 							Placement till date</a></li>
-					<li><a href="viewFeedback.jsp"><i class="fa fa-edit fa-3x"></i>View
-							Feedback of Students</a></li							
+						
 
 				</ul>
 

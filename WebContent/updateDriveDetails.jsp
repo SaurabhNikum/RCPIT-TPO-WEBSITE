@@ -76,7 +76,7 @@
 	<h1 style="color: orange; text-shadow: 0.5px 0.5px 0.5px red;">R.
 		C. Patel Institute of Technology, Shirpur</h1>
 	<div class=" w3l-login-form">
-		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Update Drive Details</h2>
+		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Update <%= session.getAttribute("user") %> Drive Details</h2>
 		
 		<%
 		try {

@@ -96,7 +96,7 @@
 <option value="">select branch</option>
   <option value="Civil">Civil Engineering</option>
   <option value="Computer">Computer Engineering</option>
-  <option value="Electronics">Electronics Engineering</option>
+  <option value="Electronics">Electrical Engineering</option>
   <option value="Electronics and telecommunication">Electronics and telecommunication Engineering</option>
   <option value="Mechanical">Mechanical Engineering</option>
 </select>

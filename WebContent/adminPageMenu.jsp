@@ -7,7 +7,7 @@
 			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
 			<span class="icon-bar"></span> <span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" style="font-size: 19px" href="#">Admin Page</a>
+		<a class="navbar-brand" style="font-size: 19px" href="#">ADMIN TPO</a>
 	</div>
 	<div
 		style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
@@ -25,7 +25,7 @@
 			<li><a href="password1.jsp"><i class="fa fa-edit fa-3x"></i>Change
 				 Company Password</a></li>
 			<li><a href="addNotificationsForStudents.jsp"><i
-					class="fa fa-edit fa-3x"></i>Add Notification for Students</a></li>
+					class="fa fa-edit fa-3x"></i>Send Notification to Students</a></li>
 			<li><a href="addCompanyToStudentProfile.jsp"><i
 					class="fa fa-edit fa-3x"></i>Add Company to student Profile</a></li>					
 			<li><a href="viewCompanyTPO.jsp"><i class="fa fa-edit fa-3x"></i>View

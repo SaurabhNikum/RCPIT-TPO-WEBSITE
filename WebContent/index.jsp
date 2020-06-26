@@ -57,9 +57,9 @@
 		<div style="width: 50%; float: left">
 		<br><br>
 			<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px red;">
-				<b>Project By 2019-20 Batch Students</b><br><b>Branch: Computer Enginering</b><br><br>Saurabh Nikum<br>Shweta Mahajan<br>Rohit Narkhede<br> Kalyani
-				Mahajan<br>
-				
+				<b>Project By 2019-20 Batch Students</b><br><b>Branch: Computer Engineering</b><br><br>Saurabh Nikum<br>Shweta Mahajan <br>Kalyani Mahajan <br> 
+				Rohit Narkhede <br>
+				<br>
 			</h2>
 		</div>
 		<div style="width: 50%; float: right">

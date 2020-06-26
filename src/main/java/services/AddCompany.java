@@ -91,22 +91,12 @@ public class AddCompany extends HttpServlet {
 				return;
 			}
 			
-	        MessageDigest digest = MessageDigest.getInstance("SHA-256");
-	        byte[] hash = digest.digest(passwords.getBytes("UTF-8"));
-	        StringBuffer hexString = new StringBuffer();
-
-	        for (int i = 0; i < hash.length; i++) {
-	            String hex = Integer.toHexString(0xff & hash[i]);
-	            if(hex.length() == 1) hexString.append('0');
-	            hexString.append(hex);
-	        }
-	        
 			PreparedStatement ps = conn.prepareStatement("insert into company values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 			ps.setString(1, null);			
 			ps.setString(2, names);
 			ps.setString(3, informations);
 			ps.setString(4, emails);
-			ps.setString(5, hexString.toString());
+			ps.setString(5, passwords);
 			ps.setString(6, dates);
 			ps.setString(7, locations);
 			ps.setString(8, packages);

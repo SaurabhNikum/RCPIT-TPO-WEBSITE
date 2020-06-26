@@ -76,11 +76,19 @@ public class SendNotification extends HttpServlet {
 		String result;
 		final String to = request.getParameter("to");
 		final String to_company = request.getParameter("to_company");
-		final String sub = request.getParameter("subject");
+		String sub = request.getParameter("subject");
 		final String msg = request.getParameter("msg");
 		final String is_company = request.getParameter("is_company");
 		final String from = Properties.getGoogleAccountEmail();
 		final String pass = Properties.getGoogleAccountPassword();
+		if (Auth.getRole(request.getSession()).equals("COMPANY")) 
+		{
+			sub ="Mail From " + req.getSession().getAttribute("user") + " "+sub;
+		}	
+		if (Auth.getRole(request.getSession()).equals("ADMIN")) 
+		{
+			sub ="Mail From TPO " +sub;
+		}
 
 		String host = "smtp.gmail.com";
 		java.util.Properties props = new java.util.Properties();

@@ -62,36 +62,15 @@ public class ChangePassword extends HttpServlet {
 		String changePasswordss = request.getParameter("confirmpassword");
 		String existingPassword = null;
 		try {
-			
-	        MessageDigest currentDigest = MessageDigest.getInstance("SHA-256");
-	        byte[] currentHash = currentDigest.digest(currentPassword.getBytes("UTF-8"));
-	        StringBuffer currentHexString = new StringBuffer();
-
-	        for (int i = 0; i < currentHash.length; i++) {
-	            String hex = Integer.toHexString(0xff & currentHash[i]);
-	            if(hex.length() == 1) currentHexString.append('0');
-	            currentHexString.append(hex);
-	        }
-	        
-	        MessageDigest changeDigest = MessageDigest.getInstance("SHA-256");
-	        byte[] changeHash = changeDigest.digest(changePasswordss.getBytes("UTF-8"));
-	        StringBuffer changeHexString = new StringBuffer();
-
-	        for (int i = 0; i < changeHash.length; i++) {
-	            String hex = Integer.toHexString(0xff & changeHash[i]);
-	            if(hex.length() == 1) changeHexString.append('0');
-	            changeHexString.append(hex);
-	        }
-	        
 			Connection conn = DBconnect.getConnect();
 			Statement statement = conn.createStatement();
 			String sql="";
 			if(Auth.getRole(request.getSession()).equals("COMPANY"))
 				sql= "select * from company where name = '" + request.getSession().getAttribute("user")
-					+ "' AND password='" + currentHexString.toString() + "'";
+					+ "' AND password='" + currentPassword + "'";
 			else
 				sql = "select * from student where EMAIL_ID = '" + request.getSession().getAttribute("user")
-					+ "' AND password='" + currentHexString.toString() + "'";
+					+ "' AND password='" + currentPassword + "'";
 			ResultSet resultSet = statement.executeQuery(sql);
 			if (resultSet.next()) {
 				existingPassword = resultSet.getString("password");
@@ -103,7 +82,7 @@ public class ChangePassword extends HttpServlet {
 				return;
 			}
 			
-			if (existingPassword.equals(changeHexString.toString())) {
+			if (existingPassword.equals(changePasswordss)) {
 				request.getSession().setAttribute("msg", "Old and New Password should not be same!");
 				response.sendRedirect("password.jsp");
 				return;
@@ -114,7 +93,7 @@ public class ChangePassword extends HttpServlet {
 				ps= conn.prepareStatement("update company set password = ? where name=?");
 			else
 				ps = conn.prepareStatement("update student set password = ? where EMAIL_ID=?");
-			ps.setString(1, changeHexString.toString());
+			ps.setString(1, changePasswordss);
 			ps.setString(2, request.getSession().getAttribute("user").toString());
 			int n = ps.executeUpdate();
 			if (n >= 1) {

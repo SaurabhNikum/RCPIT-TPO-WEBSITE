@@ -123,7 +123,7 @@
 							<%=branch.equals("Computer") ? "selected" : ""%>>Computer
 							Engineering</option>
 						<option value="Electronics"
-							<%=branch.equals("Electronics") ? "selected" : ""%>>Electronics
+							<%=branch.equals("Electronics") ? "selected" : ""%>>Electrical
 							Engineering</option>
 						<option value="Electronics and telecommunication"
 							<%=branch.equals("Electronics and telecommunication") ? "selected" : ""%>>Electronics

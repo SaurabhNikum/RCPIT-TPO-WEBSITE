@@ -7,7 +7,7 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" style="font-size: 19px" href="#">TCS</a>
+				<a class="navbar-brand" style="font-size: 19px" href="#"><%= session.getAttribute("user") %></a>
 			</div>
 			<div
 				style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">

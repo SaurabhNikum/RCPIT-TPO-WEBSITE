@@ -58,31 +58,11 @@ public class ChangePassword1 extends HttpServlet {
 		String passwords = request.getParameter("password");
 		try {
 			
-	        MessageDigest currentDigest = MessageDigest.getInstance("SHA-256");
-	        byte[] currentHash = currentDigest.digest(passwords.getBytes("UTF-8"));
-	        StringBuffer currentHexString = new StringBuffer();
-
-	        for (int i = 0; i < currentHash.length; i++) {
-	            String hex = Integer.toHexString(0xff & currentHash[i]);
-	            if(hex.length() == 1) currentHexString.append('0');
-	            currentHexString.append(hex);
-	        }
-	        
-	        MessageDigest changeDigest = MessageDigest.getInstance("SHA-256");
-	        byte[] changeHash = changeDigest.digest(passwords.getBytes("UTF-8"));
-	        StringBuffer changeHexString = new StringBuffer();
-
-	        for (int i = 0; i < changeHash.length; i++) {
-	            String hex = Integer.toHexString(0xff & changeHash[i]);
-	            if(hex.length() == 1) changeHexString.append('0');
-	            changeHexString.append(hex);
-	        }
-	        
 			Connection conn = DBconnect.getConnect();
 			Statement statement = conn.createStatement();
 			String sql="";
 			if(Auth.getRole(request.getSession()).equals("ADMIN"))
-				sql= "select * from company where NAME = '" + cnames + "' AND password='" + currentHexString.toString() + "'";
+				sql= "select * from company where NAME = '" + cnames + "' AND password='" + passwords + "'";
 			//System.out.println("CNAME="+ cnames);
 		//	else
 			//	sql = "select * from student where EMAIL_ID = '" + request.getSession().getAttribute("user")
@@ -107,7 +87,7 @@ public class ChangePassword1 extends HttpServlet {
 			PreparedStatement ps = null;
 			if(Auth.getRole(request.getSession()).equals("ADMIN"))
 				ps= conn.prepareStatement("update company set password = ? where name ='" + cnames + "'");
-			ps.setString(1, changeHexString.toString());
+			ps.setString(1, passwords);
 		//	ps.setString(2, request.getSession().getAttribute("user").toString());
 		//	else
 			//	ps = conn.prepareStatement("update student set password = ? where student_id=?");

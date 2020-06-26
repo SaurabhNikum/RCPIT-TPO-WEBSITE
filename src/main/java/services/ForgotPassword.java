@@ -139,16 +139,6 @@ public class ForgotPassword extends HttpServlet {
 		}
 		try {
 
-			MessageDigest digest = MessageDigest.getInstance("SHA-256");
-			byte[] hash = digest.digest(pass.getBytes("UTF-8"));
-			StringBuffer hexString = new StringBuffer();
-
-			for (int i = 0; i < hash.length; i++) {
-				String hex = Integer.toHexString(0xff & hash[i]);
-				if (hex.length() == 1)
-					hexString.append('0');
-				hexString.append(hex);
-			}
 
 			Connection conn = DBconnect.getConnect();
 			PreparedStatement ps = conn.prepareStatement("select * from "+table+" where forgotPasswordAuthTOken=?");
@@ -157,7 +147,7 @@ public class ForgotPassword extends HttpServlet {
 			if (rs.next()) {
 				String userID = rs.getString(userIdColumnName);
 				ps = conn.prepareStatement("update "+table+" set password=? where "+userIdColumnName+"=?");
-				ps.setString(1, hexString.toString());
+				ps.setString(1, pass);
 				ps.setString(2, userID);
 				if (ps.executeUpdate() >= 1) {
 					request.getSession().setAttribute("msg", "Password Changed Successfully");

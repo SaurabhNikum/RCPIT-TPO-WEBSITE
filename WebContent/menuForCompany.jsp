@@ -37,12 +37,11 @@
 <body>
 	<h1 style="color: orange; text-shadow: 0.5px 0.5px 0.5px red;">R. C. Patel Institute of Technology, Shirpur</h1>
 
-	<br>
-	<br>
 	<div class=" w3l-login-form">
 
 		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">We Welcome
-				You To RCPIT</h2>
+				You to RCPIT</h2>
+		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Welcome <%= session.getAttribute("user") %></h2>				
 		<form action="updateDriveDetails.jsp">
 			<button type="submit"
 				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Update
@@ -50,14 +49,14 @@
 		</form>
 		<br>
 		<br>
-		<br>
+
 		<form action="addCompanyToStudentProfile.jsp">
 			<button type="submit"
 				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Add Company to Student Profile</button>
 		</form>
 		<br>
 		<br>
-		<br>
+
 		<form action="viewStudentCompany.jsp">
 			<button type="submit"
 				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">View
@@ -65,7 +64,7 @@
 		</form>
 		<br>
 		<br>
-		<br>
+
 
 		<form action="sharedFiles.jsp">
 			<button type="submit"
@@ -73,31 +72,24 @@
 		</form>
 		<br>
 		<br>
-		<br>
+
 		<form action="notifyStudents.jsp">
 			<button type="submit"
-				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Notify
-				Students</button>
+				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Send Notification to Students</button>
 		</form>
 		<br>
 		<br>
-		<br>
+
 		<form action="password.jsp">
 			<button type="submit"
 				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Change Password</button>
 		</form>
 		<br>
 		<br>
-		<br>
+
 		<form action="/Logout">
 			<button type="submit"
 				style="color: rgb(248, 204, 114); text-shadow: 0.5px 0.5px 0.5px red;">Logout</button>
 		</form>
-		<br>
-		<br>
-		<br>
-
-
-
 
 	</div>

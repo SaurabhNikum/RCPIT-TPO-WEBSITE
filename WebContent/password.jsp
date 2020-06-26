@@ -89,7 +89,7 @@ function validateEmail(emailField)
 		C. Patel Institute of Technology, Shirpur</h1>
 	<div class=" w3l-login-form">
 		<form action="ChangePassword" method="POST" onsubmit="return checkPassword()">
-			<h3 style="color: pink; text-shadow: 0.5px 0.5px 0.5px black;">Change the password</h3>
+		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Change Password</h2>
 
 			<div class=" w3l-form-group">
 				<label>Current Password:</label>

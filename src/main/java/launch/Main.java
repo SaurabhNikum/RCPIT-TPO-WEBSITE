@@ -24,17 +24,19 @@ import uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J;
 public class Main {
 
 	final private static Logger log = LoggerFactory.getLogger(Main.class);
+	private static File root;
     public static File getRootFolder() {
         try {
-            File root;
-            String runningJarPath = Main.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath().replaceAll("\\\\", "/");
-            int lastIndexOf = runningJarPath.lastIndexOf("/target/");
-            if (lastIndexOf < 0) {
-                root = new File("");
-            } else {
-                root = new File(runningJarPath.substring(0, lastIndexOf));
-            }
-            log.info("application resolved root folder: " + root.getAbsolutePath());
+        	if(root==null) {
+	            String runningJarPath = Main.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath().replaceAll("\\\\", "/");
+	            int lastIndexOf = runningJarPath.lastIndexOf("/target/");
+	            if (lastIndexOf < 0) {
+	                root = new File("");
+	            } else {
+	                root = new File(runningJarPath.substring(0, lastIndexOf));
+	            }
+	            log.info("application resolved root folder: " + root.getAbsolutePath());
+        	}
             return root;
         } catch (URISyntaxException ex) {
             throw new RuntimeException(ex);

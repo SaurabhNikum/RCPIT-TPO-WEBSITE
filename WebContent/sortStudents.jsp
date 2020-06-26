@@ -53,8 +53,7 @@ if (!Auth.getRole(session).equals("ADMIN")) {
 	<br>
 	<br>
 	<div class=" w3l-login-form">
-		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Welcome
-			Milkesh Jain Sir</h2>
+
 		<h2 style="color: yellow; text-shadow: 0.5px 0.5px 0.5px black;">Sort The Students</h2>
 
 		<form action="SortStudents" method="post">
